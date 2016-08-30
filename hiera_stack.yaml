@@ -426,10 +426,10 @@ resources:
       user_data:
         <<: *windows_agent_user_data
 
-server2012r2c_server:
+  server2012r2c_server:
     type: OS::Nova::Server
     properties:
-      name: "server2012r2b.syd.puppet.vm"
+      name: "server2012r2c.syd.puppet.vm"
       image: "windows_2012_r2_std_eval_x86_64"
       flavor: "g1.large"
       key_name: { get_param: key_name }
